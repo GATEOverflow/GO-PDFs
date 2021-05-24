@@ -6,4 +6,4 @@ From 2021 onwards all PDFs of [GATE Overflow](https://gateoverflow.in) will be r
 4. GATE Overflow for NIELIT Scientist A,B,C,D CSE
 5. Aptitude Overflow
 
-Please consider donating to this project as it can help us in making more PDFs for free usage. 
+Please consider [donating](https://pmny.in/3IXN3eO4LhXi) to this project as it can help us in making more PDFs for free usage. 
