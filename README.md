@@ -8,6 +8,4 @@ From 2021 onwards all [PDFs](http://book.gateoverflow.in) of [GATE Overflow](htt
 
 GATE Overflow PDFs are made from the contents of [GATE Overflow](https://gateoverflow.in) site which runs on [Q2A](https://www.question2answer.org/qa/) software. For making the PDFs from HTML we make use of the Open Source tool [wkhtmltopdf](https://wkhtmltopdf.org/).
 
-Please consider [donating](https://pmny.in/3IXN3eO4LhXi) to this project as it can help us in making more PDFs for free usage. Total donations received will be updated here by beginning of every month.
-
-Total donation amount received until 2021-05-27: Rs. 50
+We are no longer collecting any donations for this project. Thanks to those who has donated so far. Total donations received: Rs. 50
