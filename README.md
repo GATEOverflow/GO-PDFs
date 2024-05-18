@@ -1,5 +1,9 @@
 # GO-PDFs
-From 2021 onwards all [PDFs](http://book.gateoverflow.in) of [GATE Overflow](https://gateoverflow.in) will be released here. We are planning the following PDFs.
+From 2021 onwards all [PDFs](http://book.gateoverflow.in) of [GATE Overflow](https://gateoverflow.in) will be released here. 
+
+Please check the [Releases](https://github.com/GATEOverflow/GO-PDFs/releases) for the latest PDFs.
+
+We are planning the following PDFs.
 1. [GATE Overflow for GATE CSE 2024, 3 volumes](https://github.com/GATEOverflow/GO-PDFs/releases/tag/gatecse-2024)))
 2. [TIFR CSE PDF](https://github.com/GATEOverflow/GO-PDFs/releases/tag/tifr)
 3. [GATE Overflow for UGC NET CSE](https://github.com/GATEOverflow/GO-PDFs/releases/tag/ugcnet)
