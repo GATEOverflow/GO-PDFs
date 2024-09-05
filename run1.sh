@@ -1,0 +1,11 @@
+#!/bin/bash
+root=$HOME/go_books
+out=$root/pdfs
+wkhtmltopdf --javascript-delay 1188000 -T 20mm -B 20mm --header-spacing 6   --title "GATE Overflow Book" --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc     $root/aptitude_overflow/book.html  --enable-toc-back-links --zoom 1.0   $out/aptitude.pdf
+#wkhtmltopdf --javascript-delay 1288000 -T 20mm -B 20mm --header-spacing 6   --title "GATE Overflow Book" --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc     $root/aptitude_overflow/filter2.html  --enable-toc-back-links --zoom 1.0   $out/aptitude_filter2.pdf
+wkhtmltopdf --javascript-delay 388000 -T 20mm -B 20mm --header-spacing 6   --title "GATE Overflow Book" --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc     $root/go_biotechnology/book.html  --enable-toc-back-links --zoom 1.0   $out/bt.pdf
+wkhtmltopdf --javascript-delay 388000 -T 20mm -B 20mm --header-spacing 6   --title "GATE Overflow Book" --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc     $root/go_chemical/book.html  --enable-toc-back-links --zoom 1.0   $out/ch.pdf
+wkhtmltopdf --javascript-delay 388000 -T 20mm -B 20mm --header-spacing 6   --title "GATE Overflow Book" --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc     $root/go_instrumentation/book.html  --enable-toc-back-links --zoom 1.0   $out/in.pdf
+wkhtmltopdf --javascript-delay 388000 -T 20mm -B 20mm --header-spacing 6   --title "GATE Overflow Book" --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc     $root/go_electronics/book.html  --enable-toc-back-links --zoom 1.0   $out/ec.pdf
+wkhtmltopdf --javascript-delay 388000 -T 20mm -B 20mm --header-spacing 6   --title "GATE Overflow Book" --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc     $root/go_electrical/book.html  --enable-toc-back-links --zoom 1.0   $out/ee.pdf
+wkhtmltopdf --javascript-delay 388000 -T 20mm -B 20mm --header-spacing 6   --title "GATE Overflow Book" --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc     $root/go_mechanical/book.html  --enable-toc-back-links --zoom 1.0   $out/me.pdf
