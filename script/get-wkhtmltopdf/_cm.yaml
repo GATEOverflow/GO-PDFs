@@ -1,0 +1,14 @@
+alias: get-wkhtmltopdf
+automation_alias: script
+automation_uid: 5b4e0237da074764
+cache: true
+tags:
+- get
+- wkhtmltopdf
+uid: 67ec874a3dfe4b87
+variations:
+  with-qt:
+    group: qt
+    default: true
+
+
