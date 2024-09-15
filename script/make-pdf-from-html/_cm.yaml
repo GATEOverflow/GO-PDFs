@@ -4,7 +4,7 @@ automation_uid: 5b4e0237da074764
 cache: false
 tags:
 - make
-- go
+- from-html
 - pdf
 deps:
   - tags: get,wkhtmltopdf,_with-qt

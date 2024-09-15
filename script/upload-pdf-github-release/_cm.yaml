@@ -1,0 +1,26 @@
+alias: upload-pdf-github-release
+automation_alias: script
+automation_uid: 5b4e0237da074764
+cache: false
+tags:
+- upload
+- github
+- pdf
+- release
+uid: 4870875d43c34005
+default_env:
+  REPO_OWNER: "GATEOverflow"
+  REPO_NAME: "GO-PDFs"
+variations:
+  go-cse:
+    env:
+      RELEASE_ID: "161340981"
+  vol1: {}
+  go-cse,vol1:
+    env:
+      ASSET_NAME: "volume1.pdf"
+  vol2: {}
+  go-cse,vol2:
+    env:
+      ASSET_NAME: "volume2.pdf" 
+

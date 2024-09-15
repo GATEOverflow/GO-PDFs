@@ -1,0 +1,29 @@
+alias: make-go-pdf
+automation_alias: script
+automation_uid: 5b4e0237da074764
+cache: false
+tags:
+- make
+- go
+- pdf
+input_mapping:
+  skip_pdf: CM_SKIP_PDF_MAKE
+uid: 43bdc18426524e54
+variations:
+  go-cse:
+    env: {}
+  vol1: {} 
+  go-cse,vol1:
+    env:
+      CM_GO_HTML_NAME: filter1_volume1.html 
+      CM_GO_PDF_NAME: filter1_volume1.pdf
+      CM_GO_COVER_NAME: vol1-cover.pdf
+    deps:
+      - tags: make,pdf,from-html,_go-cse,_vol1
+        skip_if_env:
+          CM_SKIP_PDF_MAKE:
+            - yes
+      - tags: add,pdf,cover,_go-cse,_vol1 
+      - tags: upload,pdf,release,_go-cse,_vol1 
+
+

@@ -1,0 +1,22 @@
+alias: add-pdf-cover
+automation_alias: script
+automation_uid: 5b4e0237da074764
+cache: false
+tags:
+- add
+- cover
+- pdf
+deps:
+  - tags: get,apt-package,_package.pdftk
+    env:
+      CM_APT_CHECK_CMD: 'pdftk --version'
+uid: 347b7ca88c30485a
+variations:
+  go-cse: {}
+  vol1: {}
+  go-cse,vol1:
+    env:
+      CM_PDF_COVER_PATH: <<<CM_TMP_CURRENT_SCRIPT_PATH>>>/covers/vol1-cover.pdf
+      CM_PDF_FILE_PATH: '$HOME/go_books/pdfs/filter1_volume1.pdf'
+      CM_PDF_OUTPUT_FILE_PATH: 'volume1.pdf'
+
