@@ -29,7 +29,7 @@ variations:
       CM_GO_PDF_NAME: filter1_volume1.pdf
   go-cse,vol2:
     default_env:
-      CM_GO_PDF_JS_DELAY: 688000 
+      CM_GO_PDF_JS_DELAY: 8880000 
       CM_GO_HTML_FILE_NAME: book_filter1_volume2.html 
       CM_GO_PDF_NAME: filter1_volume2.pdf
 

@@ -20,3 +20,10 @@ variations:
       CM_PDF_FILE_PATH: '$HOME/go_books/pdfs/filter1_volume1.pdf'
       CM_PDF_OUTPUT_FILE_PATH: 'volume1.pdf'
 
+  vol2: {}
+  go-cse,vol2:
+    env:
+      CM_PDF_COVER_PATH: <<<CM_TMP_CURRENT_SCRIPT_PATH>>>/covers/vol2-cover.pdf
+      CM_PDF_FILE_PATH: '$HOME/go_books/pdfs/filter1_volume2.pdf'
+      CM_PDF_OUTPUT_FILE_PATH: 'volume2.pdf'
+

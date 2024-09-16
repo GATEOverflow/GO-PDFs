@@ -27,3 +27,16 @@ variations:
       - tags: upload,pdf,release,_go-cse,_vol1 
 
 
+  vol2: {} 
+  go-cse,vol2:
+    env:
+      CM_GO_HTML_NAME: filter1_volume2.html 
+      CM_GO_PDF_NAME: filter1_volume2.pdf
+      CM_GO_COVER_NAME: vol2-cover.pdf
+    deps:
+      - tags: make,pdf,from-html,_go-cse,_vol2
+        skip_if_env:
+          CM_SKIP_PDF_MAKE:
+            - yes
+      - tags: add,pdf,cover,_go-cse,_vol2
+      - tags: upload,pdf,release,_go-cse,_vol2
