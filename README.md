@@ -20,3 +20,24 @@ The below PDF generation command works only with access to the relevant HTML fil
 pip install cm4mlops
 cm run script --tags=make,go,pdf,_go-cse,_vol1
 ```
+### Expected Output
+```
+(cm) arjun@hp-envy:~/GO-PDFs$ cm run script --tags=make,go,pdf,_go-cse,_vol2
+INFO:root:* cm run script "make go pdf _go-cse _vol2"
+INFO:root:  * cm run script "make pdf from-html _go-cse _vol2"
+INFO:root:    * cm run script "get wkhtmltopdf _with-qt"
+INFO:root:         ! load /home/arjun/CM/repos/local/cache/eb6c5132d9eb4b8b/cm-cached-state.json
+INFO:root:         ! cd /home/arjun/GO-PDFs
+INFO:root:         ! call /home/arjun/GO-PDFs/script/make-pdf-from-html/run.sh from tmp-run.sh
+Running: 
+wkhtmltopdf --javascript-delay 8880000 -T 20mm -B 20mm --header-spacing 6   --title 'GATEOverflow for GATECSE' --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc  /home/arjun/go_books/gate_overflow_for_gate_cse/book_filter1_volume2.html  --enable-toc-back-links --zoom 1.0   /home/arjun/go_books/pdfs/filter1_volume2.pdf 
+
+Loading pages (1/6)
+Counting pages (2/6)                                               
+Loading TOC (3/6)                                                           
+Resolving links (4/6)                                              
+Loading headers and footers (5/6)                                           
+Printing pages (6/6)
+[============================================================] Page 662 of 662
+
+```
