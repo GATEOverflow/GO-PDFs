@@ -10,13 +10,28 @@ input_mapping:
   skip_pdf: CM_SKIP_PDF_MAKE
 uid: 43bdc18426524e54
 variations:
+  go-em:
+    env:
+      CM_GO_COVER_NAME: ''
+    deps:
+      - tags: make,pdf,from-html,_go-em
+        skip_if_env:
+          CM_SKIP_PDF_MAKE:
+            - yes
+  go-da:
+    env:
+      CM_GO_COVER_NAME: ''
+    deps:
+      - tags: make,pdf,from-html,_go-da
+        skip_if_env:
+          CM_SKIP_PDF_MAKE:
+            - yes
+
   go-cse:
     env: {}
   vol1: {} 
   go-cse,vol1:
     env:
-      CM_GO_HTML_NAME: filter1_volume1.html 
-      CM_GO_PDF_NAME: filter1_volume1.pdf
       CM_GO_COVER_NAME: vol1-cover.pdf
     deps:
       - tags: make,pdf,from-html,_go-cse,_vol1
@@ -30,8 +45,6 @@ variations:
   vol2: {} 
   go-cse,vol2:
     env:
-      CM_GO_HTML_NAME: filter1_volume2.html 
-      CM_GO_PDF_NAME: filter1_volume2.pdf
       CM_GO_COVER_NAME: vol2-cover.pdf
     deps:
       - tags: make,pdf,from-html,_go-cse,_vol2
