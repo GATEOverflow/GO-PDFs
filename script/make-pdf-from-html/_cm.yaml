@@ -37,11 +37,49 @@ variations:
       CM_GO_PDF_BRANCH: cse
       CM_GO_PDF_TITLE: 'GATEOverflow for GATECSE'
       CM_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_cse
+  isro:
+    group: exam
+  tifr:
+    group: exam
+  nielit:
+    group: exam
+  ugcnet:
+    group: exam
+
+  go-cse,isro:
+    default_env:
+      CM_GO_PDF_JS_DELAY: 788000
+      CM_GO_HTML_FILE_NAME: book_filter2.html 
+      CM_GO_PDF_SCALE: '0.7'
+      CM_GO_PDF_NAME: isro.pdf
+
+  go-cse,tifr:
+    default_env:
+      CM_GO_PDF_JS_DELAY: 588000
+      CM_GO_HTML_FILE_NAME: book_filter5.html 
+      CM_GO_PDF_SCALE: '0.7'
+      CM_GO_PDF_NAME: tifr.pdf
+
+  go-cse,nielit:
+    default_env:
+      CM_GO_PDF_JS_DELAY: 988000
+      CM_GO_HTML_FILE_NAME: book_filter4.html 
+      CM_GO_PDF_SCALE: '0.7'
+      CM_GO_PDF_NAME: nielit.pdf
+
+  go-cse,ugcnet:
+    default_env:
+      CM_GO_PDF_JS_DELAY: 4880000
+      CM_GO_HTML_FILE_NAME: book_filter6.html 
+      CM_GO_PDF_SCALE: '0.7'
+      CM_GO_PDF_NAME: ugcnet.pdf
+
   vol1:
     group: volume
     default: true
   vol2:
     group: volume
+
   go-cse,vol1:
     default_env:
       CM_GO_PDF_JS_DELAY: 488000

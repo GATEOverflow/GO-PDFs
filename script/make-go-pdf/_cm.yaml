@@ -11,16 +11,12 @@ input_mapping:
 uid: 43bdc18426524e54
 variations:
   go-em:
-    env:
-      CM_GO_COVER_NAME: ''
     deps:
       - tags: make,pdf,from-html,_go-em
         skip_if_env:
           CM_SKIP_PDF_MAKE:
             - yes
   go-da:
-    env:
-      CM_GO_COVER_NAME: ''
     deps:
       - tags: make,pdf,from-html,_go-da
         skip_if_env:
@@ -29,10 +25,54 @@ variations:
 
   go-cse:
     env: {}
+ 
+  isro: {}
+  tifr: {}
+  nielit: {}
+  ugcnet: {}
+
+  go-cse,isro:
+    deps:
+      - tags: make,pdf,from-html,_go-cse,_isro
+        skip_if_env:
+          CM_SKIP_PDF_MAKE:
+            - yes
+      - tags: add,pdf,cover,_go-cse,_isro
+
+  go-cse,nielit:
+    deps:
+      - tags: make,pdf,from-html,_go-cse,_nielit
+        skip_if_env:
+          CM_SKIP_PDF_MAKE:
+            - yes
+      - tags: add,pdf,cover,_go-cse,_nielit
+
+  go-cse,tifr:
+    deps:
+      - tags: make,pdf,from-html,_go-cse,_tifr
+        skip_if_env:
+          CM_SKIP_PDF_MAKE:
+            - yes
+      - tags: add,pdf,cover,_go-cse,_tifr
+
+  go-cse,ugcnet:
+    deps:
+      - tags: make,pdf,from-html,_go-cse,_ugcnet
+        skip_if_env:
+          CM_SKIP_PDF_MAKE:
+            - yes
+      - tags: add,pdf,cover,_go-cse,_ugcnet
+
+  go-cse,isro:
+    deps:
+      - tags: make,pdf,from-html,_go-cse,_isro
+        skip_if_env:
+          CM_SKIP_PDF_MAKE:
+            - yes
+      - tags: add,pdf,cover,_go-cse,_isro
+
   vol1: {} 
   go-cse,vol1:
-    env:
-      CM_GO_COVER_NAME: vol1-cover.pdf
     deps:
       - tags: make,pdf,from-html,_go-cse,_vol1
         skip_if_env:
@@ -44,8 +84,6 @@ variations:
 
   vol2: {} 
   go-cse,vol2:
-    env:
-      CM_GO_COVER_NAME: vol2-cover.pdf
     deps:
       - tags: make,pdf,from-html,_go-cse,_vol2
         skip_if_env:
