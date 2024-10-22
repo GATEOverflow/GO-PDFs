@@ -18,6 +18,7 @@ The below PDF generation command works only with access to the relevant HTML fil
 
 ```
 pip install cm4mlops
+cm pull repo go-pdfs@gateoverflow
 cm run script --tags=make,go,pdf,_go-cse,_vol1
 ```
 ### Expected Output
