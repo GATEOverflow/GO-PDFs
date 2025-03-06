@@ -9,6 +9,8 @@ tags:
 deps:
   - tags: get,wkhtmltopdf,_with-qt
 uid: 403a21dfa7bc434a
+input_mapping:
+  input: MLC_HTML_FILE_PATH
 variations:
   go-da:
     group: branch
