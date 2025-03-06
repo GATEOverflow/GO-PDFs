@@ -1,4 +1,4 @@
-from cmind import utils
+from mlc import utils
 import os
 
 def preprocess(i):
@@ -11,14 +11,14 @@ def preprocess(i):
 
     automation = i['automation']
 
-    quiet = (env.get('CM_QUIET', False) == 'yes')
+    quiet = (env.get('MLC_QUIET', False) == 'yes')
 
-    env['CM_ROOT_PATH'] = os.path.join(os.path.expanduser("~"), "go_books")
-    env['CM_PDF_PATH'] = os.path.join(env['CM_ROOT_PATH'], "pdfs")
+    env['MLC_ROOT_PATH'] = os.path.join(os.path.expanduser("~"), "go_books")
+    env['MLC_PDF_PATH'] = os.path.join(env['MLC_ROOT_PATH'], "pdfs")
 
-    cmd = f"""wkhtmltopdf --javascript-delay {env['CM_GO_PDF_JS_DELAY']} -T 20mm -B 20mm --header-spacing 6   --title '{env['CM_GO_PDF_TITLE']}' --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc  {os.path.join(env['CM_ROOT_PATH'], env['CM_GO_HTML_FOLDER_NAME'], env['CM_GO_HTML_FILE_NAME'])}  --enable-toc-back-links --zoom {env['CM_GO_PDF_SCALE']}   {os.path.join(env['CM_PDF_PATH'],env['CM_GO_PDF_NAME'])} """
+    cmd = f"""wkhtmltopdf --javascript-delay {env['MLC_GO_PDF_JS_DELAY']} -T 20mm -B 20mm --header-spacing 6   --title '{env['MLC_GO_PDF_TITLE']}' --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc  {os.path.join(env['MLC_ROOT_PATH'], env['MLC_GO_HTML_FOLDER_NAME'], env['MLC_GO_HTML_FILE_NAME'])}  --enable-toc-back-links --zoom {env['MLC_GO_PDF_SCALE']}   {os.path.join(env['MLC_PDF_PATH'],env['MLC_GO_PDF_NAME'])} """
 
-    env['CM_RUN_CMD'] = cmd
+    env['MLC_RUN_CMD'] = cmd
 
     return {'return':0}
 

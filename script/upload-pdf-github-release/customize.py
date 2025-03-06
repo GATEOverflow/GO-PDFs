@@ -1,4 +1,4 @@
-from cmind import utils
+from mlc import utils
 import os
 
 def preprocess(i):
@@ -11,11 +11,11 @@ def preprocess(i):
 
     automation = i['automation']
 
-    quiet = (env.get('CM_QUIET', False) == 'yes')
+    quiet = (env.get('MLC_QUIET', False) == 'yes')
 
-    cmd = f"""bash {os.path.join(env['CM_TMP_CURRENT_SCRIPT_PATH'], "upload_release.sh") }"""
+    cmd = f"""bash {os.path.join(env['MLC_TMP_CURRENT_SCRIPT_PATH'], "upload_release.sh") }"""
 
-    env['CM_RUN_CMD'] = cmd
+    env['MLC_RUN_CMD'] = cmd
 
     return {'return':0}
 

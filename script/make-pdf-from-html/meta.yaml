@@ -13,30 +13,30 @@ variations:
   go-da:
     group: branch
     env:
-      CM_GO_PDF_BRANCH: da
-      CM_GO_PDF_TITLE: 'GATEOverflow for GATE DA'
-      CM_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_cse
-      CM_GO_PDF_JS_DELAY: 3880000
-      CM_GO_PDF_SCALE: '1.0'
-      CM_GO_HTML_FILE_NAME: book_gate_da.html 
-      CM_GO_PDF_NAME: da.pdf
+      MLC_GO_PDF_BRANCH: da
+      MLC_GO_PDF_TITLE: 'GATEOverflow for GATE DA'
+      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_cse
+      MLC_GO_PDF_JS_DELAY: 3880000
+      MLC_GO_PDF_SCALE: '1.0'
+      MLC_GO_HTML_FILE_NAME: book_gate_da.html 
+      MLC_GO_PDF_NAME: da.pdf
   go-em:
     group: branch
     env:
-      CM_GO_PDF_BRANCH: cse
-      CM_GO_PDF_TITLE: 'GATEOverflow for GATECSE'
-      CM_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_cse
-      CM_GO_PDF_JS_DELAY: 388000
-      CM_GO_PDF_SCALE: '0.7'
-      CM_GO_HTML_FILE_NAME: book_gate_em.html 
-      CM_GO_PDF_NAME: em.pdf
+      MLC_GO_PDF_BRANCH: cse
+      MLC_GO_PDF_TITLE: 'GATEOverflow for GATECSE'
+      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_cse
+      MLC_GO_PDF_JS_DELAY: 388000
+      MLC_GO_PDF_SCALE: '0.7'
+      MLC_GO_HTML_FILE_NAME: book_gate_em.html 
+      MLC_GO_PDF_NAME: em.pdf
   go-cse:
     group: branch
     default: true
     env:
-      CM_GO_PDF_BRANCH: cse
-      CM_GO_PDF_TITLE: 'GATEOverflow for GATECSE'
-      CM_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_cse
+      MLC_GO_PDF_BRANCH: cse
+      MLC_GO_PDF_TITLE: 'GATEOverflow for GATECSE'
+      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_cse
   isro:
     group: exam
   tifr:
@@ -48,31 +48,31 @@ variations:
 
   go-cse,isro:
     default_env:
-      CM_GO_PDF_JS_DELAY: 788000
-      CM_GO_HTML_FILE_NAME: book_filter2.html 
-      CM_GO_PDF_SCALE: '0.7'
-      CM_GO_PDF_NAME: isro.pdf
+      MLC_GO_PDF_JS_DELAY: 788000
+      MLC_GO_HTML_FILE_NAME: book_filter2.html 
+      MLC_GO_PDF_SCALE: '0.7'
+      MLC_GO_PDF_NAME: isro.pdf
 
   go-cse,tifr:
     default_env:
-      CM_GO_PDF_JS_DELAY: 588000
-      CM_GO_HTML_FILE_NAME: book_filter5.html 
-      CM_GO_PDF_SCALE: '0.7'
-      CM_GO_PDF_NAME: tifr.pdf
+      MLC_GO_PDF_JS_DELAY: 588000
+      MLC_GO_HTML_FILE_NAME: book_filter5.html 
+      MLC_GO_PDF_SCALE: '0.7'
+      MLC_GO_PDF_NAME: tifr.pdf
 
   go-cse,nielit:
     default_env:
-      CM_GO_PDF_JS_DELAY: 988000
-      CM_GO_HTML_FILE_NAME: book_filter4.html 
-      CM_GO_PDF_SCALE: '0.7'
-      CM_GO_PDF_NAME: nielit.pdf
+      MLC_GO_PDF_JS_DELAY: 988000
+      MLC_GO_HTML_FILE_NAME: book_filter4.html 
+      MLC_GO_PDF_SCALE: '0.7'
+      MLC_GO_PDF_NAME: nielit.pdf
 
   go-cse,ugcnet:
     default_env:
-      CM_GO_PDF_JS_DELAY: 4880000
-      CM_GO_HTML_FILE_NAME: book_filter6.html 
-      CM_GO_PDF_SCALE: '0.7'
-      CM_GO_PDF_NAME: ugcnet.pdf
+      MLC_GO_PDF_JS_DELAY: 4880000
+      MLC_GO_HTML_FILE_NAME: book_filter6.html 
+      MLC_GO_PDF_SCALE: '0.7'
+      MLC_GO_PDF_NAME: ugcnet.pdf
 
   vol1:
     group: volume
@@ -82,15 +82,15 @@ variations:
 
   go-cse,vol1:
     default_env:
-      CM_GO_PDF_JS_DELAY: 488000
-      CM_GO_HTML_FILE_NAME: book_filter1_volume1.html 
-      CM_GO_PDF_SCALE: '0.7'
-      CM_GO_PDF_NAME: filter1_volume1.pdf
+      MLC_GO_PDF_JS_DELAY: 488000
+      MLC_GO_HTML_FILE_NAME: book_filter1_volume1.html 
+      MLC_GO_PDF_SCALE: '0.7'
+      MLC_GO_PDF_NAME: filter1_volume1.pdf
   go-cse,vol2:
     default_env:
-      CM_GO_PDF_JS_DELAY: 4880000 
-      CM_GO_HTML_FILE_NAME: book_filter1_volume2.html 
-      CM_GO_PDF_SCALE: '1.0'
-      CM_GO_PDF_NAME: filter1_volume2.pdf
+      MLC_GO_PDF_JS_DELAY: 4880000 
+      MLC_GO_HTML_FILE_NAME: book_filter1_volume2.html 
+      MLC_GO_PDF_SCALE: '1.0'
+      MLC_GO_PDF_NAME: filter1_volume2.pdf
 
 
