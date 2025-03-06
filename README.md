@@ -23,22 +23,19 @@ mlcr make,go,pdf,_go-cse,_vol1
 ```
 ### Expected Output
 ```
-(cm) arjun@hp-envy:~/GO-PDFs$ cm run script --tags=make,go,pdf,_go-cse,_vol2
-INFO:root:* cm run script "make go pdf _go-cse _vol2"
-INFO:root:  * cm run script "make pdf from-html _go-cse _vol2"
-INFO:root:    * cm run script "get wkhtmltopdf _with-qt"
-INFO:root:         ! load /home/arjun/CM/repos/local/cache/eb6c5132d9eb4b8b/cm-cached-state.json
-INFO:root:         ! cd /home/arjun/GO-PDFs
-INFO:root:         ! call /home/arjun/GO-PDFs/script/make-pdf-from-html/run.sh from tmp-run.sh
-Running: 
-wkhtmltopdf --javascript-delay 8880000 -T 20mm -B 20mm --header-spacing 6   --title 'GATEOverflow for GATECSE' --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc  /home/arjun/go_books/gate_overflow_for_gate_cse/book_filter1_volume2.html  --enable-toc-back-links --zoom 1.0   /home/arjun/go_books/pdfs/filter1_volume2.pdf 
+(mlcflow) ubuntu@i-02bf0b78653d15de9:~/MLC/repos/gateoverflow@go-pdfs/script/get-wkhtmltopdf$ mlcr make,go,pdf,_go-cse,_vol1
+[2025-03-06 19:11:03,045 module.py:558 INFO] - * mlcr make,go,pdf,_go-cse,_vol1
+[2025-03-06 19:11:03,057 module.py:558 INFO] -   * mlcr make,pdf,from-html,_go-cse,_vol1
+[2025-03-06 19:11:03,064 module.py:558 INFO] -     * mlcr get,wkhtmltopdf,_with-qt
+[2025-03-06 19:11:03,064 module.py:1270 INFO] -          ! load /home/ubuntu/MLC/repos/local/cache/get-wkhtmltopdf_1c609de0/mlc-cached-state.json
+[2025-03-06 19:11:03,067 module.py:5329 INFO] -          ! cd /home/ubuntu/MLC/repos/gateoverflow@go-pdfs/script/get-wkhtmltopdf
+[2025-03-06 19:11:03,067 module.py:5330 INFO] -          ! call /home/ubuntu/MLC/repos/gateoverflow@go-pdfs/script/make-pdf-from-html/run.sh from tmp-run.sh
+Running:
+wkhtmltopdf --javascript-delay 488000 -T 20mm -B 20mm --header-spacing 6   --title 'GATEOverflow for GATECSE' --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc  /home/ubuntu/go_books/gate_overflow_for_gate_cse/book_filter1_volume1.html  --enable-toc-back-links --zoom 0.7   /home/ubuntu/go_books/pdfs/filter1_volume1.pdf
 
 Loading pages (1/6)
-Counting pages (2/6)                                               
-Loading TOC (3/6)                                                           
-Resolving links (4/6)                                              
-Loading headers and footers (5/6)                                           
-Printing pages (6/6)
-[============================================================] Page 662 of 662
+Error: Failed to load http://home/ubuntu/go_books/gate_overflow_for_gate_cse/book_filter1_volume1.html, with network status code 3 and http status code 0 - Host home not found
 
 ```
+The above error will be resolved if `book_filter1_volume1.html` file is placed at `$HOME/go_books/gate_overflow_for_gate_cse/book_filter1_volume1.html`. 
+
