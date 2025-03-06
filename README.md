@@ -19,11 +19,11 @@ The below PDF generation command works only with access to the relevant HTML fil
 ```
 pip install mlc-scripts
 mlc pull repo gateoverflow@go-pdfs
-mlcr make,go,pdf,_go-cse,_vol1
+mlcr make,go,pdf,_go-cse,_vol1 --input=<path to the input HTML>
 ```
 ### Expected Output
 ```
-(mlcflow) ubuntu@i-02bf0b78653d15de9:~/MLC/repos/gateoverflow@go-pdfs/script/get-wkhtmltopdf$ mlcr make,go,pdf,_go-cse,_vol1
+(mlcflow) ubuntu@i-02bf0b78653d15de9:~/MLC/repos/gateoverflow@go-pdfs/script/get-wkhtmltopdf$ mlcr make,go,pdf,_go-cse,_vol1 --input=/home/ubuntu/go_books/gate_overflow_for_gate_cse/book_filter1_volume1.html
 [2025-03-06 19:11:03,045 module.py:558 INFO] - * mlcr make,go,pdf,_go-cse,_vol1
 [2025-03-06 19:11:03,057 module.py:558 INFO] -   * mlcr make,pdf,from-html,_go-cse,_vol1
 [2025-03-06 19:11:03,064 module.py:558 INFO] -     * mlcr get,wkhtmltopdf,_with-qt
@@ -34,8 +34,5 @@ Running:
 wkhtmltopdf --javascript-delay 488000 -T 20mm -B 20mm --header-spacing 6   --title 'GATEOverflow for GATECSE' --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc  /home/ubuntu/go_books/gate_overflow_for_gate_cse/book_filter1_volume1.html  --enable-toc-back-links --zoom 0.7   /home/ubuntu/go_books/pdfs/filter1_volume1.pdf
 
 Loading pages (1/6)
-Error: Failed to load http://home/ubuntu/go_books/gate_overflow_for_gate_cse/book_filter1_volume1.html, with network status code 3 and http status code 0 - Host home not found
 
 ```
-The above error will be resolved if `book_filter1_volume1.html` file is placed at `$HOME/go_books/gate_overflow_for_gate_cse/book_filter1_volume1.html`. 
-
