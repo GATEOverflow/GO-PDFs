@@ -5,6 +5,9 @@ cache: true
 tags:
 - get
 - wkhtmltopdf
+deps:
+  - tags: detect,os
+  - tags: detect,sudo
 uid: 67ec874a3dfe4b87
 variations:
   with-qt:
