@@ -17,9 +17,9 @@ GATE Overflow PDFs are made from the contents of [GATE Overflow](https://gateove
 The below PDF generation command works only with access to the relevant HTML files. We'll soon share some sample HTML files for testing the pipeline.
 
 ```
-pip install cm4mlops
-cm pull repo gateoverflow@go-pdfs
-cm run script --tags=make,go,pdf,_go-cse,_vol1
+pip install mlc-scripts
+mlc pull repo gateoverflow@go-pdfs
+mlcr make,go,pdf,_go-cse,_vol1
 ```
 ### Expected Output
 ```
