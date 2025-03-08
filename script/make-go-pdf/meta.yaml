@@ -8,6 +8,7 @@ tags:
 - pdf
 input_mapping:
   skip_pdf: MLC_SKIP_PDF_MAKE
+  input: MLC_HTML_FILE_PATH
 uid: 43bdc18426524e54
 variations:
   go-em:
