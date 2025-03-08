@@ -6,7 +6,7 @@ on:
   workflow_dispatch: {}
 
 jobs:
-  mlc-run-with-results-upload:
+  go-pdf-make:
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
@@ -26,6 +26,7 @@ jobs:
     - name: Install mlc-scripts
       run: |
         pip install mlc-scripts
+        mlc pull repo gateoverflow@go-pdfs
 
     - name: Test Build (Windows)
       if: matrix.os == 'windows-latest'
