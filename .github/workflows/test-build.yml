@@ -28,16 +28,8 @@ jobs:
         pip install mlc-scripts
         mlc pull repo gateoverflow@go-pdfs
 
-    - name: Test Build (Windows)
-      if: matrix.os == 'windows-latest'
-      run: |
-        # curl -L -o book_filter6.html https://github.com/GATEOverflow/GO-PDFs/releases/download/ugcnet/book_filter6.html
-        Invoke-WebRequest -Uri 'https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.6/wkhtmltox-0.12.6-1.msvc2015-win64.exe' -OutFile 'wkhtmltox-0.12.6-1.msvc2015-win64.exe'
-        mlcr make,go,pdf,_go-cse,_vol1  --input=book_filter6.html -v --quiet
-
     - name: Test Build (Linux/macOS)
-      if: matrix.os != 'windows-latest'
       run: |
-        wget https://github.com/GATEOverflow/GO-PDFs/releases/download/ugcnet/book_filter6.html
+        mlcr download,file --url=https://github.com/GATEOverflow/GO-PDFs/releases/download/ugcnet/book_filter6.html
         mlcr make,go,pdf,_go-cse,_vol1  --input=book_filter6.html -v --quiet      
       
