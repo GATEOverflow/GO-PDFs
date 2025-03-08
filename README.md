@@ -11,13 +11,17 @@ We are planning the following PDFs.
 5. [GATE Overflow for NIELIT Scientist A,B,C,D CSE](https://github.com/GATEOverflow/GO-PDFs/releases/tag/NIELIT)
 6. [Aptitude Overflow](https://github.com/GATEOverflow/GO-PDFs/releases/tag/aptitude)
 
-GATE Overflow PDFs are made from the contents of [GATE Overflow](https://gateoverflow.in) site which runs on [Q2A](https://www.question2answer.org/qa/) software. For making the PDFs from HTML we make use of the Open Source tool [wkhtmltopdf](https://wkhtmltopdf.org/). We also rely on this [wonderful plugin](https://github.com/GATEOverflow/q2a-book) from Noah to convert Q2A content to PDF. The PDF generation pipeline is automated via [CM](https://github.com/mlcommons/ck).
+GATE Overflow PDFs are made from the contents of [GATE Overflow](https://gateoverflow.in) site which runs on [Q2A](https://www.question2answer.org/qa/) software. For making the PDFs from HTML we make use of the Open Source tool [wkhtmltopdf](https://wkhtmltopdf.org/). We also rely on this [wonderful plugin](https://github.com/GATEOverflow/q2a-book) from Noah to convert Q2A content to PDF. The PDF generation pipeline is automated via [MLCFlow](https://github.com/mlcommons/mlcflow).
 
 ## PDF generation
 The below PDF generation command works only with access to the relevant HTML files. We'll soon share some sample HTML files for testing the pipeline.
 
 ```
 pip install mlc-scripts
+```
+More detailed installation steps can be found [here](https://docs.mlcommons.org/mlcflow/install/)
+
+```
 mlc pull repo gateoverflow@go-pdfs
 mlcr make,go,pdf,_go-cse,_vol1 --input=<path to the input HTML>
 ```
