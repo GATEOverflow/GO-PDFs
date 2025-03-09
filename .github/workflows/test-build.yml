@@ -31,5 +31,5 @@ jobs:
     - name: Test Build (Linux/macOS)
       run: |
         mlcr download,file --url=https://github.com/GATEOverflow/GO-PDFs/releases/download/ugcnet/book_filter6.html
-        mlcr make,go,pdf,_go-cse,_vol1  --input=book_filter6.html -v --quiet      
+        mlcr make,go,pdf,_go-cse,_vol1  --input=book_filter6.html -v --quiet --skip_cover
       
