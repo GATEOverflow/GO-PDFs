@@ -8,6 +8,7 @@ tags:
 - pdf
 input_mapping:
   skip_pdf: MLC_SKIP_PDF_MAKE
+  skip_cover: MLC_SKIP_PDF_COVER
   input: MLC_HTML_FILE_PATH
 uid: 43bdc18426524e54
 variations:
@@ -39,6 +40,9 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-cse,_isro
+        skip_if_env:
+          MLC_SKIP_PDF_COVER:
+            - yes
 
   go-cse,nielit:
     deps:
@@ -47,6 +51,9 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-cse,_nielit
+        skip_if_env:
+          MLC_SKIP_PDF_COVER:
+            - yes
 
   go-cse,tifr:
     deps:
@@ -55,6 +62,9 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-cse,_tifr
+        skip_if_env:
+          MLC_SKIP_PDF_COVER:
+            - yes
 
   go-cse,ugcnet:
     deps:
@@ -63,6 +73,9 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-cse,_ugcnet
+        skip_if_env:
+          MLC_SKIP_PDF_COVER:
+            - yes
 
   go-cse,isro:
     deps:
@@ -71,6 +84,9 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-cse,_isro
+        skip_if_env:
+          MLC_SKIP_PDF_COVER:
+            - yes
 
   vol1: {} 
   go-cse,vol1:
@@ -80,6 +96,9 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-cse,_vol1 
+        skip_if_env:
+          MLC_SKIP_PDF_COVER:
+            - yes
       - tags: upload,pdf,release,_go-cse,_vol1 
 
 
@@ -91,4 +110,7 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-cse,_vol2
+        skip_if_env:
+          MLC_SKIP_PDF_COVER:
+            - yes
       - tags: upload,pdf,release,_go-cse,_vol2
