@@ -34,6 +34,6 @@ def postprocess(i):
 
     env = i['env']
     out_file_path = os.path.join(env['MLC_PDF_PATH'],env['MLC_GO_PDF_NAME'])
-    print("""PDF file generated at {out_file_path}""")
+    print(f"""PDF file generated at {out_file_path}""")
 
     return {'return':0}
