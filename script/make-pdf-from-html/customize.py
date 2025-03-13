@@ -10,6 +10,7 @@ def preprocess(i):
     meta = i['meta']
 
     automation = i['automation']
+    q = '"' if os_info['platform'] == 'windows' else "'"
 
     quiet = (env.get('MLC_QUIET', False) == 'yes')
 
@@ -24,7 +25,7 @@ def preprocess(i):
     if not os.path.exists(env['MLC_PDF_PATH']):
         os.makedirs(env['MLC_PDF_PATH'])
 
-    cmd = f"""wkhtmltopdf --javascript-delay {env['MLC_GO_PDF_JS_DELAY']} -T 20mm -B 20mm --header-spacing 6   --title '{env['MLC_GO_PDF_TITLE']}' --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc  {html_file_path}  --enable-toc-back-links --zoom {env['MLC_GO_PDF_SCALE']}   {os.path.join(env['MLC_PDF_PATH'],env['MLC_GO_PDF_NAME'])} """
+    cmd = f"""wkhtmltopdf --javascript-delay {env['MLC_GO_PDF_JS_DELAY']} -T 20mm -B 20mm --header-spacing 6   --title {q}{env['MLC_GO_PDF_TITLE']}{q} --no-stop-slow-scripts   --load-error-handling ignore  --enable-local-file-access   toc  {q}{html_file_path}{q}  --enable-toc-back-links --zoom {env['MLC_GO_PDF_SCALE']}   {q}{os.path.join(env['MLC_PDF_PATH'],env['MLC_GO_PDF_NAME'])}{q} """
 
     env['MLC_RUN_CMD'] = cmd
 
