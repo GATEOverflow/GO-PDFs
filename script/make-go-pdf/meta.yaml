@@ -14,7 +14,7 @@ input_mapping:
 uid: 43bdc18426524e54
 
 prehook_deps:
-  - tags: put,go,pdf
+  - tags: put,go,pdfs
     enable_if_env:
       MLC_UPLOAD_PDF:
         - on
