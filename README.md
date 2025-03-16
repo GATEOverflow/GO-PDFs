@@ -39,3 +39,27 @@ wkhtmltopdf --javascript-delay 488000 -T 20mm -B 20mm --header-spacing 6   --tit
 Loading pages (1/6)
 
 ```
+
+** The below commands are private to GATEOverflow as they require access to the HTML files from GATEOverflow **
+
+### GO CSE
+
+```
+mlcr make,go,pdf,_go-cse,_vol1
+```
+
+```
+mlcr make,go,pdf,_go-cse,_vol2
+```
+
+### GO Engineering Mathematics
+
+```
+mlcr make,go,pdf,_go-em
+```
+
+### GO DA
+
+```
+mlcr make,go,pdf,_go-da
+```
