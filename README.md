@@ -40,7 +40,8 @@ Loading pages (1/6)
 
 ```
 
-** The below commands are private to GATEOverflow as they require access to the HTML files from GATEOverflow **
+> **ℹ️ Info**  
+> The below commands are private to GATEOverflow as they require access to the HTML files from GATEOverflow (**.
 
 ### GO CSE
 
