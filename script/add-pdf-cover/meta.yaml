@@ -17,14 +17,14 @@ variations:
   go-cse,vol1:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/vol1-cover.pdf
-      MLC_PDF_FILE_PATH: '$HOME/go_books/pdfs/filter1_volume1.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/filter1_volume1.pdf'
       MLC_PDF_OUTPUT_FILE_PATH: 'volume1.pdf'
 
   vol2: {}
   go-cse,vol2:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/vol2-cover.pdf
-      MLC_PDF_FILE_PATH: '$HOME/go_books/pdfs/filter1_volume2.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/filter1_volume2.pdf'
       MLC_PDF_OUTPUT_FILE_PATH: 'volume2.pdf'
   isro: {}
   tifr: {}
@@ -34,20 +34,20 @@ variations:
   go-cse,isro:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/isro-cse-cover.pdf
-      MLC_PDF_FILE_PATH: '$HOME/go_books/pdfs/isro.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/isro.pdf'
       MLC_PDF_OUTPUT_FILE_PATH: 'isro.pdf'
   go-cse,tifr:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/tifr-cse-cover.pdf
-      MLC_PDF_FILE_PATH: '$HOME/go_books/pdfs/tifr.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/tifr.pdf'
       MLC_PDF_OUTPUT_FILE_PATH: 'tifr.pdf'
   go-cse,nielit:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/nielit-cse-cover.pdf
-      MLC_PDF_FILE_PATH: '$HOME/go_books/pdfs/nielit.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/nielit.pdf'
       MLC_PDF_OUTPUT_FILE_PATH: 'nielit.pdf'
   go-cse,ugcnet:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/ugcnet-cse-cover.pdf
-      MLC_PDF_FILE_PATH: '$HOME/go_books/pdfs/ugcnet.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/ugcnet.pdf'
       MLC_PDF_OUTPUT_FILE_PATH: 'ugcnet.pdf'

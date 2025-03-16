@@ -6,6 +6,10 @@ deps:
   - tags: get,rclone-config,_config-name.go-pdfs-html
     env: 
       MLC_RCLONE_DRIVE_FOLDER_ID: 17YlxqPLRY8xKkwa1bMkSVTQpeFQV72Wr
+  - env:
+      MLC_CACHE_DIR_ENV_NAME: MLC_GO_PDFS_HTML_ROOT
+    extra_cache_tags: go-pdfs-html,html,go
+    tags: get,cache,dir,_name.go-pdfs-html
 cache: false
 new_env_keys:
 - MLC_GO_PDFS_HTML_ROOT

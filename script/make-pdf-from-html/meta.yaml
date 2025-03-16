@@ -12,6 +12,10 @@ deps:
     skip_if_env:
       MLC_HTML_FILE_PATH:
       - on
+  - env:
+      MLC_CACHE_DIR_ENV_NAME: MLC_GO_PDFS_OUT
+    extra_cache_tags: go-pdfs-out,pdfs,go
+    tags: get,cache,dir,_name.go-pdfs-out
 uid: 403a21dfa7bc434a
 new_env_keys:
   - MLC_PDF_PATH
