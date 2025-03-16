@@ -14,7 +14,7 @@ def preprocess(i):
 
     quiet = (env.get('MLC_QUIET', False) == 'yes')
 
-    env['MLC_ROOT_PATH'] = os.path.join(os.path.expanduser("~"), "go_books")
+    env['MLC_ROOT_PATH'] = env.get('MLC_GO_PDFS_HTML_ROOT', os.path.join(os.path.expanduser("~"), "go_books"))
     env['MLC_PDF_PATH'] = os.path.join(env['MLC_ROOT_PATH'], "pdfs")
 
     html_file_path = env.get('MLC_HTML_FILE_PATH', os.path.join(env['MLC_ROOT_PATH'], env['MLC_GO_HTML_FOLDER_NAME'], env['MLC_GO_HTML_FILE_NAME']))
