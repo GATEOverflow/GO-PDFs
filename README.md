@@ -41,7 +41,7 @@ Loading pages (1/6)
 ```
 
 > **ℹ️ Info**  
-> The below commands are private to GATEOverflow as they require access to the HTML files from GATEOverflow (**.
+> The below commands are private to GATEOverflow as they require access to the HTML files from GATEOverflow.
 
 ### GO CSE
 
