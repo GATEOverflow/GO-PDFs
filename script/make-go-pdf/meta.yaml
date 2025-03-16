@@ -10,7 +10,14 @@ input_mapping:
   skip_pdf: MLC_SKIP_PDF_MAKE
   skip_cover: MLC_SKIP_PDF_COVER
   input: MLC_HTML_FILE_PATH
+  upload: MLC_UPLOAD_PDF
 uid: 43bdc18426524e54
+
+prehook_deps:
+  - tags: put,go,pdf
+    enable_if_env:
+      MLC_UPLOAD_PDF:
+        - on
 variations:
   go-em:
     deps:

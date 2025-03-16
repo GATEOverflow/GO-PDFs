@@ -13,6 +13,8 @@ deps:
       MLC_HTML_FILE_PATH:
       - on
 uid: 403a21dfa7bc434a
+new_env_keys:
+  - MLC_PDF_PATH
 input_mapping:
   input: MLC_HTML_FILE_PATH
 variations:

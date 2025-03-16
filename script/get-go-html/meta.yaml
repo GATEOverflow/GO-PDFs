@@ -2,8 +2,11 @@ alias: get-go-html
 automation_alias: script
 automation_uid: 5b4e0237da074764
 category: MLC Script Template
-deps: []
-cache: true
+deps:
+  - tags: get,rclone-config,_config-name.go-pdfs-html
+    env: 
+      MLC_RCLONE_DRIVE_FOLDER_ID: 17YlxqPLRY8xKkwa1bMkSVTQpeFQV72Wr
+cache: false
 new_env_keys:
 - MLC_GO_PDFS_HTML_ROOT
 new_state_keys: []
@@ -14,7 +17,4 @@ tags:
 - go
 - html
 - get
-env:
-  MLC_RCLONE_CONFIG_CMD: 'rclone config create go-pdfs drive config_is_local=false scope=drive.readonly root_folder_id=17YlxqPLRY8xKkwa1bMkSVTQpeFQV72Wr'
-  MLC_RCLONE_CONNECT_CMD: 'rclone config reconnect go-pdfs:'
 uid: 82a921e0a31a4395

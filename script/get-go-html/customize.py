@@ -10,7 +10,7 @@ def preprocess(i):
 
     os_info = i['os_info']
 
-    env['MLC_RUN_CMD'] = f"""rclone sync go-pdfs: ./go-pdfs"""
+    env['MLC_RUN_CMD'] = f"""rclone sync go-pdfs-html: ./go-pdfs-html"""
     return {'return': 0}
 
 
@@ -19,7 +19,7 @@ def postprocess(i):
     env = i['env']
     state = i['state']
 
-    env['MLC_GO_PDFS_HTML_ROOT'] = os.path.join(os.getcwd(), 'go-pdfs')
+    env['MLC_GO_PDFS_HTML_ROOT'] = os.path.join(os.getcwd(), 'go-pdfs-html')
     env['MLC_DEPENDENT_CACHED_PATH'] = env['MLC_GO_PDFS_HTML_ROOT']
 
     os_info = i['os_info']
