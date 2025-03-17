@@ -12,7 +12,7 @@ def preprocess(i):
 
     pdf_root = os.path.dirname(env['MLC_PDF_FILE_PATH'])
 
-    env['MLC_RUN_CMD'] = f"""rclone sync {pdf_root} go-pdfs-out:"""
+    env['MLC_RUN_CMD'] = f"""rclone copy {pdf_root} go-pdfs-out:"""
     return {'return': 0}
 
 
