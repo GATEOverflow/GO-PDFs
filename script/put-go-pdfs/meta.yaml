@@ -4,7 +4,7 @@ automation_uid: 5b4e0237da074764
 cache: false
 category: MLC Script Template
 deps:
-  - tags: get,rclone-config,_config-name.go-pdfs-out
+  - tags: get,rclone-config,_write,_config-name.go-pdfs-out
     force_cache: yes
     env:
       MLC_RCLONE_DRIVE_FOLDER_ID: 1auwx-H5_2A4tOHP9LdptX8H3JdCYXBgk
