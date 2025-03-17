@@ -19,6 +19,7 @@ deps:
 uid: 403a21dfa7bc434a
 new_env_keys:
   - MLC_PDF_FILE_PATH
+  - MLC_GO_PDFS_OUT
 input_mapping:
   input: MLC_HTML_FILE_PATH
 variations:
@@ -38,8 +39,8 @@ variations:
       MLC_GO_PDF_BRANCH: cse
       MLC_GO_PDF_TITLE: 'GATEOverflow for GATECSE'
       MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_cse
-      MLC_GO_PDF_JS_DELAY: 388000
-      MLC_GO_PDF_SCALE: '0.7'
+      MLC_GO_PDF_JS_DELAY: 1688000
+      MLC_GO_PDF_SCALE: '0.6'
       MLC_GO_HTML_FILE_NAME: book_gate_em.html 
       MLC_GO_PDF_NAME: em.pdf
   go-cse:
