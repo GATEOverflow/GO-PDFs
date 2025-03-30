@@ -12,7 +12,7 @@ echo "${MLC_RUN_CMD}"
 echo ""
 
 if [[ ${MLC_FAKE_RUN} != "yes" ]]; then
-  #eval "${MLC_RUN_CMD}"
+  eval "${MLC_RUN_CMD}"
   test $? -eq 0 || exit $?
 fi
 
