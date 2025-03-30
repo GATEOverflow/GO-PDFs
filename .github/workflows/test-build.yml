@@ -7,11 +7,12 @@ on:
 
 jobs:
   go-pdf-make:
-    runs-on: ${{ matrix.os }}
+    runs-on: intel-spr
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]      
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        book: ["_go-cse,_vol1", "_go-cse,_vol2", "_go-em", "_go-da"]
         
   
     steps:
@@ -30,6 +31,6 @@ jobs:
 
     - name: Test Build (Linux/macOS)
       run: |
-        mlcr download,file --url=https://github.com/GATEOverflow/GO-PDFs/releases/download/ugcnet/book_filter6.html
-        mlcr make,go,pdf,_go-cse,_vol1  --input=book_filter6.html -v --quiet --skip_cover
+        #mlcr download,file --url=https://github.com/GATEOverflow/GO-PDFs/releases/download/ugcnet/book_filter6.html
+        mlcr make,go,pdf,${{ matrix.book }} -v --quiet --skip_cover
       
