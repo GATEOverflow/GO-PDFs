@@ -61,28 +61,28 @@ variations:
 
   go-cse,isro:
     default_env:
-      MLC_GO_PDF_JS_DELAY: 788000
+      MLC_GO_PDF_JS_DELAY: 1788000
       MLC_GO_HTML_FILE_NAME: book_filter2.html 
       MLC_GO_PDF_SCALE: '0.7'
       MLC_GO_PDF_NAME: isro.pdf
 
   go-cse,tifr:
     default_env:
-      MLC_GO_PDF_JS_DELAY: 588000
+      MLC_GO_PDF_JS_DELAY: 1588000
       MLC_GO_HTML_FILE_NAME: book_filter5.html 
       MLC_GO_PDF_SCALE: '0.7'
       MLC_GO_PDF_NAME: tifr.pdf
 
   go-cse,nielit:
     default_env:
-      MLC_GO_PDF_JS_DELAY: 988000
+      MLC_GO_PDF_JS_DELAY: 1988000
       MLC_GO_HTML_FILE_NAME: book_filter4.html 
       MLC_GO_PDF_SCALE: '0.7'
       MLC_GO_PDF_NAME: nielit.pdf
 
   go-cse,ugcnet:
     default_env:
-      MLC_GO_PDF_JS_DELAY: 4880000
+      MLC_GO_PDF_JS_DELAY: 7880000
       MLC_GO_HTML_FILE_NAME: book_filter6.html 
       MLC_GO_PDF_SCALE: '0.7'
       MLC_GO_PDF_NAME: ugcnet.pdf
@@ -95,13 +95,13 @@ variations:
 
   go-cse,vol1:
     default_env:
-      MLC_GO_PDF_JS_DELAY: 488000
+      MLC_GO_PDF_JS_DELAY: 8488000
       MLC_GO_HTML_FILE_NAME: book_filter1_volume1.html 
       MLC_GO_PDF_SCALE: '0.7'
       MLC_GO_PDF_NAME: filter1_volume1.pdf
   go-cse,vol2:
     default_env:
-      MLC_GO_PDF_JS_DELAY: 4880000 
+      MLC_GO_PDF_JS_DELAY: 8880000 
       MLC_GO_HTML_FILE_NAME: book_filter1_volume2.html 
       MLC_GO_PDF_SCALE: '1.0'
       MLC_GO_PDF_NAME: filter1_volume2.pdf
