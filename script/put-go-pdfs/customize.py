@@ -10,9 +10,10 @@ def preprocess(i):
 
     os_info = i['os_info']
 
-    pdf_root = os.path.dirname(env['MLC_PDF_FILE_PATH'])
+    
+    pdf_file_path = env['MLC_PDF_FILE_PATH']
 
-    env['MLC_RUN_CMD'] = f"""rclone copy {pdf_root} go-pdfs-out:"""
+    env['MLC_RUN_CMD'] = f"""rclone copy {pdf_file_path} go-pdfs-out:"""
     return {'return': 0}
 
 
