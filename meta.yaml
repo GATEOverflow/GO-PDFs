@@ -1,3 +1,6 @@
 alias: gateoverflow@go-pdfs
 git: true
 uid: 2073469bb3004b98
+deps:
+  - url: mlcommons@mlperf-automations
+    branch: dev
