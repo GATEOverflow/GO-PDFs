@@ -68,21 +68,21 @@ variations:
 
   go-cse,tifr:
     default_env:
-      MLC_GO_PDF_JS_DELAY: 1588000
+      MLC_GO_PDF_JS_DELAY: 6588000
       MLC_GO_HTML_FILE_NAME: book_filter5.html 
       MLC_GO_PDF_SCALE: '0.7'
       MLC_GO_PDF_NAME: tifr.pdf
 
   go-cse,nielit:
     default_env:
-      MLC_GO_PDF_JS_DELAY: 1988000
+      MLC_GO_PDF_JS_DELAY: 6988000
       MLC_GO_HTML_FILE_NAME: book_filter4.html 
       MLC_GO_PDF_SCALE: '0.7'
       MLC_GO_PDF_NAME: nielit.pdf
 
   go-cse,ugcnet:
     default_env:
-      MLC_GO_PDF_JS_DELAY: 7880000
+      MLC_GO_PDF_JS_DELAY: 77880000
       MLC_GO_HTML_FILE_NAME: book_filter6.html 
       MLC_GO_PDF_SCALE: '0.7'
       MLC_GO_PDF_NAME: ugcnet.pdf

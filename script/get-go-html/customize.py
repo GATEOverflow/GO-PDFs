@@ -10,7 +10,7 @@ def preprocess(i):
 
     os_info = i['os_info']
 
-    env['MLC_RUN_CMD'] = f"""rclone sync go-pdfs-html: {env['MLC_GO_PDFS_HTML_ROOT']}"""
+    env['MLC_RUN_CMD'] = f"""rclone copy go-pdfs-html: {env['MLC_GO_PDFS_HTML_ROOT']}"""
     return {'return': 0}
 
 
