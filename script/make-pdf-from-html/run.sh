@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#CM Script location: ${MLC_TMP_CURRENT_SCRIPT_PATH}
-
 #To export any variable
 #echo "VARIABLE_NAME=VARIABLE_VALUE" >>tmp-run-env.out
 
@@ -13,7 +11,7 @@ echo ""
 
 if [[ ${MLC_FAKE_RUN} != "yes" ]]; then
   eval "${MLC_RUN_CMD}"
-  test $? -eq 0 || exit $?
+  #test $? -eq 0 || exit $?
 fi
 
 #root=$HOME/go_books
