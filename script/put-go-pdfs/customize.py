@@ -14,6 +14,16 @@ def preprocess(i):
     pdf_file_path = env['MLC_PDF_FILE_PATH']
 
     env['MLC_RUN_CMD'] = f"""rclone copy {pdf_file_path} go-pdfs-out:"""
+    
+    pdf_file_path = env['MLC_PDF_FILE_PATH']
+
+    env['MLC_RUN_CMD'] = f"""rclone copy {pdf_file_path} go-pdfs-out:"""
+    
+    if env.get('MLC_PDF_OUTPUT_FILE_PATH', '') != '' and os.path.exists(env['MLC_PDF_OUTPUT_FILE_PATH']):
+        pdf_file_w_cover_path = env['MLC_PDF_OUTPUT_FILE_PATH']
+        env['MLC_RUN_CMD1'] = f"""rclone copy {pdf_file_w_cover_path} go-pdfs-out:"""
+
+      
     return {'return': 0}
 
 

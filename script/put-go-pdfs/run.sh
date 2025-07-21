@@ -17,3 +17,6 @@ run "$MLC_RCLONE_CONFIG_CMD"
 run "$MLC_RCLONE_CONNECT_CMD"
 #Add your run commands here...
 run "$MLC_RUN_CMD"
+if [ "$MLC_RUN_CMD1" ]; then
+  run "$MLC_RUN_CMD1"
+fi

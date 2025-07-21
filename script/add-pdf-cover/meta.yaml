@@ -11,6 +11,8 @@ deps:
     env:
       MLC_APT_CHECK_CMD: 'pdftk --version'
 uid: 347b7ca88c30485a
+new_env_keys:
+  - MLC_PDF_OUTPUT_FILE_PATH
 variations:
   go-cse: {}
   vol1: {}
