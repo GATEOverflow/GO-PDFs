@@ -10,12 +10,16 @@ deps:
       MLC_RCLONE_DRIVE_FOLDER_ID: 1auwx-H5_2A4tOHP9LdptX8H3JdCYXBgk
 new_env_keys:
 - MLC_GO_PDFS_OUT
+input_mapping:
+  input: MLC_PDF_FILE_PATH
+  pdf_path: MLC_PDF_FILE_PATH
 new_state_keys: []
 post_deps: []
 posthook_deps: []
 prehook_deps: []
 tags:
 - drive
+- pdf
 - pdfs
 - put
 - go

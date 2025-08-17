@@ -22,6 +22,9 @@ new_env_keys:
   - MLC_GO_PDFS_OUT
 input_mapping:
   input: MLC_HTML_FILE_PATH
+default_env:
+  MLC_GO_PDF_JS_DELAY: 168800
+  MLC_GO_PDF_SCALE: '1.0'
 variations:
   go-da:
     group: branch
@@ -48,8 +51,44 @@ variations:
     default: true
     env:
       MLC_GO_PDF_BRANCH: cse
-      MLC_GO_PDF_TITLE: 'GATEOverflow for GATECSE'
+      MLC_GO_PDF_TITLE: 'GATEOverflow for GATE CSE'
       MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_cse
+  go-ece:
+    group: branch
+    env:
+      MLC_GO_PDF_BRANCH: ece
+      MLC_GO_PDF_TITLE: 'GATEOverflow for GATE ECE'
+      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_ece
+      MLC_GO_HTML_FILE_NAME: book.html 
+      MLC_GO_PDF_JS_DELAY: 168800
+      MLC_GO_PDF_NAME: ece.pdf
+  go-ee:
+    group: branch
+    env:
+      MLC_GO_PDF_BRANCH: ee
+      MLC_GO_PDF_TITLE: 'GATEOverflow for GATE Electrical Engineering'
+      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_ee
+      MLC_GO_HTML_FILE_NAME: book.html 
+      MLC_GO_PDF_JS_DELAY: 168800
+      MLC_GO_PDF_NAME: ee.pdf
+  go-me:
+    group: branch
+    env:
+      MLC_GO_PDF_BRANCH: me
+      MLC_GO_PDF_TITLE: 'GATEOverflow for GATE Mechanical Engineering'
+      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_me
+      MLC_GO_HTML_FILE_NAME: book.html 
+      MLC_GO_PDF_JS_DELAY: 168800
+      MLC_GO_PDF_NAME: me.pdf
+  go-ce:
+    group: branch
+    env:
+      MLC_GO_PDF_BRANCH: ce
+      MLC_GO_PDF_TITLE: 'GATEOverflow for GATE Civil Engineering'
+      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_ce
+      MLC_GO_HTML_FILE_NAME: book.html 
+      MLC_GO_PDF_JS_DELAY: 168800
+      MLC_GO_PDF_NAME: ce.pdf
   isro:
     group: exam
   tifr:

@@ -121,3 +121,48 @@ variations:
           MLC_SKIP_PDF_COVER:
             - yes
       - tags: upload,pdf,release,_go-cse,_vol2
+  
+  go-ece:
+    deps:
+      - tags: make,pdf,from-html,_go-ece
+        skip_if_env:
+          MLC_SKIP_PDF_MAKE:
+            - yes
+      - tags: add,pdf,cover,_go-ece 
+        skip_if_env:
+          MLC_SKIP_PDF_COVER:
+            - yes
+      - tags: upload,pdf,release,_go-ece
+  go-ee:
+    deps:
+      - tags: make,pdf,from-html,_go-ee
+        skip_if_env:
+          MLC_SKIP_PDF_MAKE:
+            - yes
+      - tags: add,pdf,cover,_go-ee 
+        skip_if_env:
+          MLC_SKIP_PDF_COVER:
+            - yes
+      - tags: upload,pdf,release,_go-ee
+  go-me:
+    deps:
+      - tags: make,pdf,from-html,_go-me
+        skip_if_env:
+          MLC_SKIP_PDF_MAKE:
+            - yes
+      - tags: add,pdf,cover,_go-me 
+        skip_if_env:
+          MLC_SKIP_PDF_COVER:
+            - yes
+      - tags: upload,pdf,release,_go-me
+  go-ce:
+    deps:
+      - tags: make,pdf,from-html,_go-ce
+        skip_if_env:
+          MLC_SKIP_PDF_MAKE:
+            - yes
+      - tags: add,pdf,cover,_go-ce 
+        skip_if_env:
+          MLC_SKIP_PDF_COVER:
+            - yes
+      - tags: upload,pdf,release,_go-ce
