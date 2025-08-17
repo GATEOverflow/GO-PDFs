@@ -11,6 +11,7 @@ input_mapping:
   skip_cover: MLC_SKIP_PDF_COVER
   input: MLC_HTML_FILE_PATH
   upload: MLC_UPLOAD_PDF
+  release: MLC_RELEASE_PDF
 uid: 43bdc18426524e54
 
 prehook_deps:
@@ -107,6 +108,9 @@ variations:
           MLC_SKIP_PDF_COVER:
             - yes
       - tags: upload,pdf,release,_go-cse,_vol1 
+        enable_if_env:
+          MLC_RELEASE_PDF:
+            - on
 
 
   vol2: {} 
@@ -121,6 +125,9 @@ variations:
           MLC_SKIP_PDF_COVER:
             - yes
       - tags: upload,pdf,release,_go-cse,_vol2
+        enable_if_env:
+          MLC_RELEASE_PDF:
+            - on
   
   go-ece:
     deps:
@@ -133,6 +140,9 @@ variations:
           MLC_SKIP_PDF_COVER:
             - yes
       - tags: upload,pdf,release,_go-ece
+        enable_if_env:
+          MLC_RELEASE_PDF:
+            - on
   go-ee:
     deps:
       - tags: make,pdf,from-html,_go-ee
@@ -144,6 +154,9 @@ variations:
           MLC_SKIP_PDF_COVER:
             - yes
       - tags: upload,pdf,release,_go-ee
+        enable_if_env:
+          MLC_RELEASE_PDF:
+            - on
   go-me:
     deps:
       - tags: make,pdf,from-html,_go-me
@@ -155,6 +168,9 @@ variations:
           MLC_SKIP_PDF_COVER:
             - yes
       - tags: upload,pdf,release,_go-me
+        enable_if_env:
+          MLC_RELEASE_PDF:
+            - on
   go-ce:
     deps:
       - tags: make,pdf,from-html,_go-ce
@@ -166,3 +182,6 @@ variations:
           MLC_SKIP_PDF_COVER:
             - yes
       - tags: upload,pdf,release,_go-ce
+        enable_if_env:
+          MLC_RELEASE_PDF:
+            - on

@@ -15,6 +15,18 @@ variations:
   go-cse:
     env:
       RELEASE_ID: "161340981"
+  go-ece:
+    env:
+      RELEASE_ID: ""
+  go-ee:
+    env:
+      RELEASE_ID: ""
+  go-me:
+    env:
+      RELEASE_ID: ""
+  go-ce:
+    env:
+      RELEASE_ID: ""
   vol1: {}
   go-cse,vol1:
     env:
