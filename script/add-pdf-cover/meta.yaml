@@ -30,7 +30,7 @@ variations:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/vol1-cover.pdf
       MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/me.pdf'
-      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gateeme_w_cover.pdf'
+      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gateme_w_cover.pdf'
   go-ce:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/vol1-cover.pdf
