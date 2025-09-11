@@ -14,6 +14,7 @@ if [[ ${MLC_FAKE_RUN} != "yes" ]]; then
   #test $? -eq 0 || exit $?
 fi
 
+exit 0
 #root=$HOME/go_books
 #out=$root/pdfs
 
