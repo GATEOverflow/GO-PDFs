@@ -21,6 +21,11 @@ variations:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/gate-ec-cover.pdf
       MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/ece.pdf'
       MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gateece_w_cover.pdf'
+  go-da:
+    env:
+      MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/gate-da-cover.pdf
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/da.pdf'
+      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gateda_w_cover.pdf'
   go-ee:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/gate-ee-cover.pdf

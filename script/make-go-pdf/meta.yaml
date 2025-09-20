@@ -32,6 +32,14 @@ variations:
         skip_if_env:
           MLC_SKIP_PDF_MAKE:
             - yes
+      - tags: add,pdf,cover,_go-da 
+        skip_if_env:
+          MLC_SKIP_PDF_COVER:
+            - yes
+      - tags: upload,pdf,release,_go-da
+        enable_if_env:
+          MLC_RELEASE_PDF:
+            - on
 
   go-cse:
     env: {}
