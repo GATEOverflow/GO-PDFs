@@ -144,5 +144,7 @@ variations:
       MLC_GO_HTML_FILE_NAME: book_filter1_volume2.html 
       MLC_GO_PDF_SCALE: '1.0'
       MLC_GO_PDF_NAME: filter1_volume2.pdf
-
+  with-answers:
+    env:
+      MLC_GO_PDF_WITH_ANSWERS: yes
 

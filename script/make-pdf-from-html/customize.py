@@ -1,5 +1,6 @@
 from mlc import utils
 import os
+from utils import *
 
 def preprocess(i):
 
@@ -13,6 +14,13 @@ def preprocess(i):
     q = '"' if os_info['platform'] == 'windows' else "'"
 
     quiet = (env.get('MLC_QUIET', False) == 'yes')
+
+
+    if is_true(env.get('MLC_GO_PDF_WITH_ANSWERS')):
+       env['MLC_GO_HTML_FILE_NAME'] = env['MLC_GO_HTML_FILE_NAME'].replace(".html", "_with_answers.html")
+       env['MLC_GO_PDF_NAME'] = env['MLC_GO_PDF_NAME'].replace(".pdf", "_with_answers.pdf")
+    
+
 
     env['MLC_ROOT_PATH'] = env.get('MLC_GO_PDFS_HTML_ROOT', os.path.join(os.path.expanduser("~"), "go_books"))
     env['MLC_PDF_PATH'] = env['MLC_GO_PDFS_OUT']
