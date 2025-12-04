@@ -67,7 +67,7 @@ variations:
     env:
       MLC_GO_PDF_BRANCH: ee
       MLC_GO_PDF_TITLE: 'GATEOverflow for GATE Electrical Engineering'
-      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_ee
+      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_electrical
       MLC_GO_HTML_FILE_NAME: book.html 
       MLC_GO_PDF_JS_DELAY: 168800
       MLC_GO_PDF_NAME: ee.pdf
@@ -76,7 +76,7 @@ variations:
     env:
       MLC_GO_PDF_BRANCH: me
       MLC_GO_PDF_TITLE: 'GATEOverflow for GATE Mechanical Engineering'
-      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_me
+      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_mechanical
       MLC_GO_HTML_FILE_NAME: book.html 
       MLC_GO_PDF_JS_DELAY: 168800
       MLC_GO_PDF_NAME: me.pdf
@@ -85,7 +85,7 @@ variations:
     env:
       MLC_GO_PDF_BRANCH: ce
       MLC_GO_PDF_TITLE: 'GATEOverflow for GATE Civil Engineering'
-      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_ce
+      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_civil_engineering
       MLC_GO_HTML_FILE_NAME: book.html 
       MLC_GO_PDF_JS_DELAY: 168800
       MLC_GO_PDF_NAME: ce.pdf
