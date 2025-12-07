@@ -20,15 +20,24 @@ prehook_deps:
       MLC_UPLOAD_PDF:
         - on
 variations:
+  with-answers:
+    adr:
+      pdf-from-html:
+        tags:
+          _with-answers
   go-em:
     deps:
       - tags: make,pdf,from-html,_go-em
+        names:
+        - pdf-from-html
         skip_if_env:
           MLC_SKIP_PDF_MAKE:
             - yes
   go-da:
     deps:
       - tags: make,pdf,from-html,_go-da
+        names:
+        - pdf-from-html
         skip_if_env:
           MLC_SKIP_PDF_MAKE:
             - yes
@@ -52,6 +61,8 @@ variations:
   go-cse,isro:
     deps:
       - tags: make,pdf,from-html,_go-cse,_isro
+        names:
+        - pdf-from-html
         skip_if_env:
           MLC_SKIP_PDF_MAKE:
             - yes
@@ -63,6 +74,8 @@ variations:
   go-cse,nielit:
     deps:
       - tags: make,pdf,from-html,_go-cse,_nielit
+        names:
+        - pdf-from-html
         skip_if_env:
           MLC_SKIP_PDF_MAKE:
             - yes
@@ -74,6 +87,8 @@ variations:
   go-cse,tifr:
     deps:
       - tags: make,pdf,from-html,_go-cse,_tifr
+        names:
+        - pdf-from-html
         skip_if_env:
           MLC_SKIP_PDF_MAKE:
             - yes
@@ -85,6 +100,8 @@ variations:
   go-cse,ugcnet:
     deps:
       - tags: make,pdf,from-html,_go-cse,_ugcnet
+        names:
+        - pdf-from-html
         skip_if_env:
           MLC_SKIP_PDF_MAKE:
             - yes
@@ -96,6 +113,8 @@ variations:
   go-cse,isro:
     deps:
       - tags: make,pdf,from-html,_go-cse,_isro
+        names:
+        - pdf-from-html
         skip_if_env:
           MLC_SKIP_PDF_MAKE:
             - yes
@@ -108,6 +127,8 @@ variations:
   go-cse,vol1:
     deps:
       - tags: make,pdf,from-html,_go-cse,_vol1
+        names:
+        - pdf-from-html
         skip_if_env:
           MLC_SKIP_PDF_MAKE:
             - yes
@@ -125,6 +146,10 @@ variations:
   go-cse,vol2:
     deps:
       - tags: make,pdf,from-html,_go-cse,_vol2
+        names:
+        - pdf-from-html
+        names:
+        - pdf-from-html
         skip_if_env:
           MLC_SKIP_PDF_MAKE:
             - yes
@@ -140,6 +165,8 @@ variations:
   go-ece:
     deps:
       - tags: make,pdf,from-html,_go-ece
+        names:
+        - pdf-from-html
         skip_if_env:
           MLC_SKIP_PDF_MAKE:
             - yes
@@ -154,6 +181,8 @@ variations:
   go-ee:
     deps:
       - tags: make,pdf,from-html,_go-ee
+        names:
+        - pdf-from-html
         skip_if_env:
           MLC_SKIP_PDF_MAKE:
             - yes
@@ -168,6 +197,8 @@ variations:
   go-me:
     deps:
       - tags: make,pdf,from-html,_go-me
+        names:
+        - pdf-from-html
         skip_if_env:
           MLC_SKIP_PDF_MAKE:
             - yes
@@ -182,6 +213,8 @@ variations:
   go-ce:
     deps:
       - tags: make,pdf,from-html,_go-ce
+        names:
+        - pdf-from-html
         skip_if_env:
           MLC_SKIP_PDF_MAKE:
             - yes

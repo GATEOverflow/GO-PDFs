@@ -21,7 +21,6 @@ def preprocess(i):
        env['MLC_GO_PDF_NAME'] = env['MLC_GO_PDF_NAME'].replace(".pdf", "_with_answers.pdf")
     
 
-
     env['MLC_ROOT_PATH'] = env.get('MLC_GO_PDFS_HTML_ROOT', os.path.join(os.path.expanduser("~"), "go_books"))
     env['MLC_PDF_PATH'] = env['MLC_GO_PDFS_OUT']
 
