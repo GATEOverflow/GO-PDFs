@@ -19,6 +19,10 @@ def preprocess(i):
     if final_pdf_file == '':
         final_pdf_file = os.path.join(os.getcwd(), f"final_{os.path.basename(pdf_file)}")
 
+
+    if is_true(env.get('MLC_GO_PDF_WITH_ANSWERS')) and "answers" not in final_pdf_file:
+        final_pdf_file = final_pdf_file.replace(".pdf", "_with_answers.pdf")
+
     cmd = f"""pdftk {cover_file} {pdf_file} cat output {final_pdf_file}"""
 
     env['MLC_RUN_CMD'] = cmd
