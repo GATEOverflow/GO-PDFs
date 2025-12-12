@@ -52,7 +52,7 @@ variations:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/vol2-cover.pdf
       MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/filter1_volume2.pdf'
-      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_PDFS_OUT>>>/gatecse-volume2_w_cover.pdf'
+      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gatecse-volume2_w_cover.pdf'
   isro: {}
   tifr: {}
   nielit: {}
