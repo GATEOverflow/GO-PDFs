@@ -25,6 +25,9 @@ variations:
       pdf-from-html:
         tags:
           _with-answers
+      add-cover:
+        tags:
+          _with-answers
   go-em:
     deps:
       - tags: make,pdf,from-html,_go-em
@@ -80,6 +83,8 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-cse,_nielit
+        names:
+        - add-cover
         skip_if_env:
           MLC_SKIP_PDF_COVER:
             - yes
@@ -93,6 +98,8 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-cse,_tifr
+        names:
+        - add-cover
         skip_if_env:
           MLC_SKIP_PDF_COVER:
             - yes
@@ -106,6 +113,8 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-cse,_ugcnet
+        names:
+        - add-cover
         skip_if_env:
           MLC_SKIP_PDF_COVER:
             - yes
@@ -119,6 +128,8 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-cse,_isro
+        names:
+        - add-cover
         skip_if_env:
           MLC_SKIP_PDF_COVER:
             - yes
@@ -133,6 +144,8 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-cse,_vol1 
+        names:
+        - add-cover
         skip_if_env:
           MLC_SKIP_PDF_COVER:
             - yes
@@ -148,12 +161,12 @@ variations:
       - tags: make,pdf,from-html,_go-cse,_vol2
         names:
         - pdf-from-html
-        names:
-        - pdf-from-html
         skip_if_env:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-cse,_vol2
+        names:
+        - add-cover
         skip_if_env:
           MLC_SKIP_PDF_COVER:
             - yes
@@ -171,6 +184,8 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-ece 
+        names:
+        - add-cover
         skip_if_env:
           MLC_SKIP_PDF_COVER:
             - yes
@@ -187,6 +202,8 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-ee 
+        names:
+        - add-cover
         skip_if_env:
           MLC_SKIP_PDF_COVER:
             - yes
@@ -203,6 +220,8 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-me 
+        names:
+        - add-cover
         skip_if_env:
           MLC_SKIP_PDF_COVER:
             - yes
@@ -219,6 +238,8 @@ variations:
           MLC_SKIP_PDF_MAKE:
             - yes
       - tags: add,pdf,cover,_go-ce 
+        names:
+        - add-cover
         skip_if_env:
           MLC_SKIP_PDF_COVER:
             - yes

@@ -13,46 +13,51 @@ deps:
 uid: 347b7ca88c30485a
 new_env_keys:
   - MLC_PDF_OUTPUT_FILE_PATH
+default_env:
+  MLC_PDF_NAME_SUFFIX: ''
 variations:
   go-cse: {}
   vol1: {}
+  with-answers:
+    env:
+      MLC_PDF_NAME_SUFFIX: "_with_answers"
   go-ece:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/gate-ec-cover.pdf
-      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/ece.pdf'
-      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gateece_w_cover.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/ece<<<MLC_PDF_NAME_SUFFIX>>>.pdf'
+      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gateece<<<MLC_PDF_NAME_SUFFIX>>>_w_cover.pdf'
   go-da:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/gate-da-cover.pdf
-      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/da.pdf'
-      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gateda_w_cover.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/da<<<MLC_PDF_NAME_SUFFIX>>>.pdf'
+      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gateda<<<MLC_PDF_NAME_SUFFIX>>>_w_cover.pdf'
   go-ee:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/gate-ee-cover.pdf
-      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/ee.pdf'
-      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gateee_w_cover.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/ee<<<MLC_PDF_NAME_SUFFIX>>>.pdf'
+      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gateee<<<MLC_PDF_NAME_SUFFIX>>>_w_cover.pdf'
   go-me:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/gate-me-cover.pdf
-      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/me.pdf'
-      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gateme_w_cover.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/me<<<MLC_PDF_NAME_SUFFIX>>>.pdf'
+      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gateme<<<MLC_PDF_NAME_SUFFIX>>>_w_cover.pdf'
   go-ce:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/gate-ce-cover.pdf
-      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/ce.pdf'
-      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gatece_w_cover.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/ce<<<MLC_PDF_NAME_SUFFIX>>>.pdf'
+      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gatece<<<MLC_PDF_NAME_SUFFIX>>>_w_cover.pdf'
   go-cse,vol1:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/vol1-cover.pdf
-      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/filter1_volume1.pdf'
-      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gatecse-volume1_w_cover.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/filter1_volume1<<<MLC_PDF_NAME_SUFFIX>>>.pdf'
+      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gatecse-volume1<<<MLC_PDF_NAME_SUFFIX>>>_w_cover.pdf'
 
   vol2: {}
   go-cse,vol2:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/vol2-cover.pdf
-      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/filter1_volume2.pdf'
-      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gatecse-volume2_w_cover.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/filter1_volume2<<<MLC_PDF_NAME_SUFFIX>>>.pdf'
+      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gatecse-volume2<<<MLC_PDF_NAME_SUFFIX>>>_w_cover.pdf'
   isro: {}
   tifr: {}
   nielit: {}
@@ -61,20 +66,20 @@ variations:
   go-cse,isro:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/isro-cse-cover.pdf
-      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/isro.pdf'
-      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/isro_w_cover.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/isro<<<MLC_PDF_NAME_SUFFIX>>>.pdf'
+      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/isro<<<MLC_PDF_NAME_SUFFIX>>>_w_cover.pdf'
   go-cse,tifr:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/tifr-cse-cover.pdf
-      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/tifr.pdf'
-      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/tifr_w_cover.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/tifr<<<MLC_PDF_NAME_SUFFIX>>>.pdf'
+      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/tifr<<<MLC_PDF_NAME_SUFFIX>>>_w_cover.pdf'
   go-cse,nielit:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/nielit-cse-cover.pdf
-      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/nielit.pdf'
-      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/nielit_w_cover.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/nielit<<<MLC_PDF_NAME_SUFFIX>>>.pdf'
+      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/nielit<<<MLC_PDF_NAME_SUFFIX>>>_w_cover.pdf'
   go-cse,ugcnet:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/ugcnet-cse-cover.pdf
-      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/ugcnet.pdf'
-      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/ugcnet_w_cover.pdf'
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/ugcnet<<<MLC_PDF_NAME_SUFFIX>>>.pdf'
+      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/ugcnet<<<MLC_PDF_NAME_SUFFIX>>>_w_cover.pdf'
