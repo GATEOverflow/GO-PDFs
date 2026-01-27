@@ -53,11 +53,17 @@ variations:
       MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gatecse-volume1<<<MLC_PDF_NAME_SUFFIX>>>_w_cover.pdf'
 
   vol2: {}
+  vol3: {}
   go-cse,vol2:
     env:
       MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/vol2-cover.pdf
       MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/filter1_volume2<<<MLC_PDF_NAME_SUFFIX>>>.pdf'
       MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gatecse-volume2<<<MLC_PDF_NAME_SUFFIX>>>_w_cover.pdf'
+  go-cse,vol3:
+    env:
+      MLC_PDF_COVER_PATH: <<<MLC_TMP_CURRENT_SCRIPT_PATH>>>/covers/vol3-cover.pdf
+      MLC_PDF_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/filter1_volume3<<<MLC_PDF_NAME_SUFFIX>>>.pdf'
+      MLC_PDF_OUTPUT_FILE_PATH: '<<<MLC_GO_PDFS_OUT>>>/gatecse-volume3<<<MLC_PDF_NAME_SUFFIX>>>_w_cover.pdf'
   isro: {}
   tifr: {}
   nielit: {}

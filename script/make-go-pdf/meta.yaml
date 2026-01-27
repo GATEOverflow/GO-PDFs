@@ -156,6 +156,7 @@ variations:
 
 
   vol2: {} 
+  vol3: {} 
   go-cse,vol2:
     deps:
       - tags: make,pdf,from-html,_go-cse,_vol2
@@ -175,6 +176,23 @@ variations:
           MLC_RELEASE_PDF:
             - on
   
+  go-cse,vol3:
+    deps:
+      - tags: make,pdf,from-html,_go-cse,_vol3
+        names:
+        - pdf-from-html
+        skip_if_env:
+          MLC_SKIP_PDF_MAKE:
+            - yes
+      - tags: add,pdf,cover,_go-cse,_vol3
+        names:
+        - add-cover
+        skip_if_env:
+          MLC_SKIP_PDF_COVER:
+            - yes
+      - tags: upload,pdf,release,_go-cse,_vol3
+        enable_if_env:
+          MLC_RELEASE_PDF:
   go-ece:
     deps:
       - tags: make,pdf,from-html,_go-ece

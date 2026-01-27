@@ -32,7 +32,11 @@ variations:
     env:
       ASSET_NAME: "volume1.pdf"
   vol2: {}
+  vol3: {}
   go-cse,vol2:
     env:
       ASSET_NAME: "volume2.pdf" 
+  go-cse,vol3:
+    env:
+      ASSET_NAME: "volume3.pdf" 
 
