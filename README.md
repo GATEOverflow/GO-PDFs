@@ -1,10 +1,10 @@
 # GO-PDFs
-From 2021 onwards all [PDFs](http://book.gateoverflow.in) of [GATE Overflow](https://gateoverflow.in) will be released here. 
+
+This site hosts the MLCFlow scripts used for GO PDF generation.
 
 Please check the [Releases](https://github.com/GATEOverflow/GO-PDFs/releases) for the latest PDFs.
 
-We are planning the following PDFs.
-1. [GATE Overflow for GATE CSE 2025, 2 volumes](https://github.com/GATEOverflow/GO-PDFs/releases/tag/gatecse-2025)
+1. [GATE Overflow for GATE CSE 2027, 3 volumes](https://github.com/GATEOverflow/GO-PDFs/releases/tag/gatecse-2027)
 2. [TIFR CSE PDF](https://github.com/GATEOverflow/GO-PDFs/releases/tag/tifr)
 3. [GATE Overflow for UGC NET CSE](https://github.com/GATEOverflow/GO-PDFs/releases/tag/ugcnet)
 4. [GATE Overflow for ISRO CSE](https://github.com/GATEOverflow/GO-PDFs/releases/tag/isro)
