@@ -114,7 +114,7 @@ variations:
 
   go-cse,nielit:
     default_env:
-      MLC_GO_PDF_JS_DELAY: 6980000
+      MLC_GO_PDF_JS_DELAY: 69880000
       MLC_GO_HTML_FILE_NAME: book_filter4.html 
       MLC_GO_PDF_SCALE: '0.7'
       MLC_GO_PDF_NAME: nielit.pdf
