@@ -100,14 +100,14 @@ variations:
 
   go-cse,isro:
     default_env:
-      MLC_GO_PDF_JS_DELAY: 1788000
+      MLC_GO_PDF_JS_DELAY: 17880000
       MLC_GO_HTML_FILE_NAME: book_filter2.html 
       MLC_GO_PDF_SCALE: '0.7'
       MLC_GO_PDF_NAME: isro.pdf
 
   go-cse,tifr:
     default_env:
-      MLC_GO_PDF_JS_DELAY: 6588000
+      MLC_GO_PDF_JS_DELAY: 65880000
       MLC_GO_HTML_FILE_NAME: book_filter5.html 
       MLC_GO_PDF_SCALE: '0.7'
       MLC_GO_PDF_NAME: tifr.pdf
@@ -121,7 +121,7 @@ variations:
 
   go-cse,ugcnet:
     default_env:
-      MLC_GO_PDF_JS_DELAY: 18788000
+      MLC_GO_PDF_JS_DELAY: 187880000
       MLC_GO_HTML_FILE_NAME: book_filter6.html 
       MLC_GO_PDF_SCALE: '0.7'
       MLC_GO_PDF_NAME: ugcnet.pdf
