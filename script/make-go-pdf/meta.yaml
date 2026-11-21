@@ -266,3 +266,35 @@ variations:
         enable_if_env:
           MLC_RELEASE_PDF:
             - on
+  go-ch:
+    deps:
+      - tags: make,pdf,from-html,_go-ch
+        names:
+        - pdf-from-html
+        skip_if_env:
+          MLC_SKIP_PDF_MAKE:
+            - yes
+  go-in:
+    deps:
+      - tags: make,pdf,from-html,_go-in
+        names:
+        - pdf-from-html
+        skip_if_env:
+          MLC_SKIP_PDF_MAKE:
+            - yes
+  go-bt:
+    deps:
+      - tags: make,pdf,from-html,_go-bt
+        names:
+        - pdf-from-html
+        skip_if_env:
+          MLC_SKIP_PDF_MAKE:
+            - yes
+  go-aptitude:
+    deps:
+      - tags: make,pdf,from-html,_go-aptitude
+        names:
+        - pdf-from-html
+        skip_if_env:
+          MLC_SKIP_PDF_MAKE:
+            - yes

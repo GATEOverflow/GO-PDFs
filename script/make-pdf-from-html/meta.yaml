@@ -89,6 +89,42 @@ variations:
       MLC_GO_HTML_FILE_NAME: book.html 
       MLC_GO_PDF_JS_DELAY: 168800
       MLC_GO_PDF_NAME: ce.pdf
+  go-ch:
+    group: branch
+    env:
+      MLC_GO_PDF_BRANCH: ch
+      MLC_GO_PDF_TITLE: 'GATEOverflow for GATE Chemical Engineering'
+      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_ch
+      MLC_GO_HTML_FILE_NAME: book.html
+      MLC_GO_PDF_JS_DELAY: 168800
+      MLC_GO_PDF_NAME: ch.pdf
+  go-in:
+    group: branch
+    env:
+      MLC_GO_PDF_BRANCH: in
+      MLC_GO_PDF_TITLE: 'GATEOverflow for GATE Instrumentation Engineering'
+      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_in
+      MLC_GO_HTML_FILE_NAME: book.html
+      MLC_GO_PDF_JS_DELAY: 168800
+      MLC_GO_PDF_NAME: in.pdf
+  go-bt:
+    group: branch
+    env:
+      MLC_GO_PDF_BRANCH: bt
+      MLC_GO_PDF_TITLE: 'GATEOverflow for GATE Biotechnology'
+      MLC_GO_HTML_FOLDER_NAME: gate_overflow_for_gate_bt
+      MLC_GO_HTML_FILE_NAME: book.html
+      MLC_GO_PDF_JS_DELAY: 168800
+      MLC_GO_PDF_NAME: bt.pdf
+  go-aptitude:
+    group: branch
+    env:
+      MLC_GO_PDF_BRANCH: aptitude
+      MLC_GO_PDF_TITLE: 'GATEOverflow for Aptitude'
+      MLC_GO_HTML_FOLDER_NAME: aptitude_overflow
+      MLC_GO_HTML_FILE_NAME: book.html
+      MLC_GO_PDF_JS_DELAY: 1688000
+      MLC_GO_PDF_NAME: aptitude.pdf
   isro:
     group: exam
   tifr:
